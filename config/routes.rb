@@ -1,4 +1,13 @@
-MeetingApp::Application.routes.draw do
+MeetingsSystem::Application.routes.draw do
+  get "pages/forside"
+
+  resources :deltageres
+
+  resources :agendas
+
+  resources :meetings
+
+  root :to => 'pages#forside'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

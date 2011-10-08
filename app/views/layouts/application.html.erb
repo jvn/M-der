@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MeetingApp</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <body>
+        <div class="container-fluid">
+            <div class="sidebar" style="background-color: #848484">
+              <center>
+                <h4>Mikia Holding A/S</h4>
+                <br/>
+                <br/>
+                <b>Kontakt information</b>
+                <img src="logo.jpg"/>
+                <br/>
+                <br/>
+                <p>
+                    <b>Postadresse</b> <br/>
+                    C.F.Møllers Alle 60 4 tv <br/> 2300 København S  <br/>
+                </p>
+                <br/>
+                <p>
+                  <b>Bank og CVR <b></b> <br/>
+                  BANK: Nordea <br/>
+                  Regnr: 2217 <br/> <br/>
+                  Konto: 4382 554 219 <br/>  <br/>
+                </p>
+                <p>
+                  <b>Mailadresse</b>
+                  nsl@mikiaholding.dk
+                </p>
+                <br/>
+                <p>
+                  <b>Telefon nummer</b> <br/>
+                  Nicolaj Lindtners mobiltelefon: <br/>
+                  3142 5626          <br/>
+                </p>
+              </center>
+            </div>
+            <div class="content">
+                <head>
+                    <title>MeetingsSystem</title>
+                    <%= stylesheet_link_tag    "application" %>
+                    <%= javascript_include_tag "application" %>
+                    <%= csrf_meta_tags %>
+                </head>
 
-<%= yield %>
+                <body style="padding-top: 100px; background-color: #BDBDBD; height: 7000px;">
+                    <div style="z-index: 5;" class="topbar-wrapper">
+                        <div data-dropdown="dropdown" class="topbar">
+                            <div class="topbar-inner" style="color: #FF8C00;">
+                                <div class="container">
+                                    <ul class="pills">
+                                        <li class="active"><%= link_to 'Forsiden', root_path %></li>
+                                        <li><%= link_to 'Møder', meetings_path %></li>
+                                        <li><%= link_to 'Agendaer', agendas_path %></li>
+                                        <li><%= link_to 'Deltagere', deltageres_path %></li>
+                                    </ul>
+                                </div>
+                            </div><!-- /topbar-inner -->
+                        </div><!-- /topbar -->
+                    </div>
 
-</body>
+
+                    <%= yield %>
+
+
+                    <footer class="footer">
+                        <div class="container">
+                            <p class="pull-right">Joel og Mikkel er for vilde</p>
+                            <p>
+                                Lavet til Mikia holdig AS "A Company in Progress"
+                            </p>
+                        </div>
+                    </footer>
+                </body>
+            </div>
+        </div>
+    </body>
 </html>

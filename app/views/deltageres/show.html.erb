@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Meetingnr:</b>
+  <%= @deltagere.meetingnr %>
+</p>
+
+<p>
+  <b>Navn:</b>
+  <%= @deltagere.navn %>
+</p>
+
+
+<%= link_to 'Edit', edit_deltagere_path(@deltagere) %> |
+<%= link_to 'Back', deltageres_path %>

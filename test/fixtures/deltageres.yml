@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  meetingnr: MyString
+  navn: MyString
+
+two:
+  meetingnr: MyString
+  navn: MyString

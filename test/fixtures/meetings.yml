@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nr: 9.99
+  dato: MyString
+  sted: MyString
+  kl: 9.99
+  navn: MyString
+
+two:
+  nr: 9.99
+  dato: MyString
+  sted: MyString
+  kl: 9.99
+  navn: MyString

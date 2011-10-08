@@ -1,0 +1,25 @@
+<%= form_for(@deltagere) do |f| %>
+  <% if @deltagere.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@deltagere.errors.count, "error") %> prohibited this deltagere from being saved:</h2>
+
+      <ul>
+      <% @deltagere.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :meetingnr %><br />
+    <%= f.text_field :meetingnr %>
+  </div>
+  <div class="field">
+    <%= f.label :navn %><br />
+    <%= f.select(:navn, raw("<option value='jvn'>Joel</option><option value='mkl'>Mikkel</option> <option value'nsl'>Nicolai</option>")) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

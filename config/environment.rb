@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-MeetingApp::Application.initialize!
+MeetingsSystem::Application.initialize!

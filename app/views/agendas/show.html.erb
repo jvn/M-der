@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Meetingnr:</b>
+  <%= @agenda.meetingnr %>
+</p>
+
+<p>
+  <b>Punktnr:</b>
+  <%= @agenda.punktnr %>
+</p>
+
+<p>
+  <b>Punktnavn:</b>
+  <%= @agenda.punktnavn %>
+</p>
+
+<p>
+  <b>Beskrivelse:</b>
+  <%= @agenda.beskrivelse %>
+</p>
+
+
+<%= link_to 'Edit', edit_agenda_path(@agenda) %> |
+<%= link_to 'Back', agendas_path %>

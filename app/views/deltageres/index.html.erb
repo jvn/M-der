@@ -1,0 +1,25 @@
+<h1>Listing deltageres</h1>
+
+<table>
+  <tr>
+    <th>Meetingnr</th>
+    <th>Navn</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @deltageres.each do |deltagere| %>
+  <tr>
+    <td><%= deltagere.meetingnr %></td>
+    <td><%= deltagere.navn %></td>
+    <td><%= link_to 'Show', deltagere %></td>
+    <td><%= link_to 'Edit', edit_deltagere_path(deltagere) %></td>
+    <td><%= link_to 'Destroy', deltagere, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Deltagere', new_deltagere_path %>

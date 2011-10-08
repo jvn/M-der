@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  meetingnr: 9.99
+  punktnr: 9.99
+  punktnavn: MyString
+  beskrivelse: MyText
+
+two:
+  meetingnr: 9.99
+  punktnr: 9.99
+  punktnavn: MyString
+  beskrivelse: MyText
