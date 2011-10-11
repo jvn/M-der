@@ -1,6 +1,7 @@
 # encoding: UTF-8
 class MyValidator2 < ActiveModel::Validator
-    def validate(tal)
+
+  def validate(tal)
       @fejl = true
 
       if tal.navn.to_f == 0.0
@@ -12,7 +13,6 @@ class MyValidator2 < ActiveModel::Validator
       end
     end
 end
-
 
 class Meeting < ActiveRecord::Base
   has_many :agendas, :dependent => :destroy

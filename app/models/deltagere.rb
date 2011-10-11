@@ -8,11 +8,12 @@ class AwesomeValidator < ActiveModel::Validator
       @wrong = false
     end
     if @wrong
-      numbers.errors[:meetingnr] << "møde nummeret skal være et helt tal)"
+      numbers.errors[:meetingnr] << "møde nummeret skal være et helt tal"
     end
   end
  end
 
 class Deltagere < ActiveRecord::Base
+  validates :meetingnr, :numericality => true
   validates_with AwesomeValidator
 end
